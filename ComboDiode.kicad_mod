@@ -39,9 +39,9 @@
     (stroke (width 0.1) (type solid)) (layer "Dwgs.User") (tstamp 2c53794b-2bac-4fdf-9c85-608dc09d9f34))
   (fp_line (start 0.25 0.4) (end -0.35 0)
     (stroke (width 0.1) (type solid)) (layer "Dwgs.User") (tstamp b6e790fb-fec7-4a57-8a37-78623e682680))
-  (pad "1" thru_hole roundrect (at -2.54 0) (size 2.286 1.778) (drill 0.9906 (offset 0.254 0)) (layers "*.Cu" "*.Mask") (roundrect_rratio 0)
+  (pad "1" thru_hole roundrect (at -2.54 0) (size 2.286 1.778) (drill 0.9906 (offset 0.254 0)) (layers "*.Cu" "*.Paste" "*.Mask") (roundrect_rratio 0)
     (chamfer_ratio 0.2) (chamfer top_right bottom_right) (tstamp 4b51803c-a0b9-41b9-ae95-ddbec00f5afa))
-  (pad "2" thru_hole custom (at 2.54 0) (size 1.905 1.905) (drill 0.9906) (layers "*.Cu" "*.Mask")
+  (pad "2" thru_hole custom (at 2.54 0) (size 1.905 1.905) (drill 0.9906) (layers "*.Cu" "*.Paste" "*.Mask")
     (thermal_bridge_angle 90)
     (options (clearance outline) (anchor circle))
     (primitives
