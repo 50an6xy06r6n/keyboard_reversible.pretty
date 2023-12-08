@@ -5,7 +5,7 @@
       (effects (font (size 1.27 1.27) (thickness 0.15)))
     (tstamp 42592622-56ed-413c-971f-5d007e668773)
   )
-  (fp_text value "Val**" (at 0 0 180) (layer "F.SilkS") hide
+  (fp_text value "Val**" (at 0 0 180) (layer "F.Fab") hide
       (effects (font (size 1.27 1.27) (thickness 0.15)))
     (tstamp d8603f9d-b4df-463e-a27a-119716b9a451)
   )
@@ -67,27 +67,8 @@
   (pad "" thru_hole circle (at 0 -5.9) (size 3 3) (drill 1.55) (layers "*.Cu" "*.Paste" "*.Mask") (tstamp 717473d4-37bd-469d-80be-f69e1a09f5a5))
   (pad "" np_thru_hole circle (at 0 0 270) (size 4 4) (drill 4) (layers "*.Cu" "*.Mask") (tstamp 01479582-538d-45c8-afb8-ab288f7f528d))
   (pad "" np_thru_hole circle (at 5.5 0 270) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask") (tstamp 0168c5f0-0416-489b-a7af-9105bfd5d56f))
-  (pad "1" smd custom (at 0 -5.9 180) (size 1 3) (drill (offset -2.1 0)) (layers "F.Cu" "F.Mask")
-    (options (clearance outline) (anchor rect))
-    (primitives
-      (gr_poly
-        (pts
-          (xy 1.29 1.5)
-          (xy 0.49 0.7)
-          (xy 0.49 1.5)
-        )
-        (width 0) (fill yes))
-      (gr_poly
-        (pts
-          (xy 1.29 -1.5)
-          (xy 0.49 -0.7)
-          (xy 0.49 -1.5)
-        )
-        (width 0) (fill yes))
-    ) (tstamp 282f55cf-f61b-4e62-b6cc-ae7dc96f1479))
-  (pad "1" thru_hole circle (at 5 -3.7) (size 3 3) (drill 1.55) (layers "*.Cu" "B.Paste" "B.Mask") (tstamp 9b2273c8-01a6-43d3-b651-3cf218960cf2))
-  (pad "2" thru_hole circle (at -5 -3.7) (size 3 3) (drill 1.55) (layers "*.Cu" "F.Paste" "F.Mask") (tstamp 5a0c791a-4597-4f0f-be3a-9bb8556b0e86))
-  (pad "2" smd custom (at 0 -5.9 180) (size 1 3) (drill (offset 2.1 0)) (layers "B.Cu" "B.Mask")
+  (pad "1" thru_hole circle (at -5 -3.7) (size 3 3) (drill 1.55) (layers "*.Cu" "F.Paste" "F.Mask") (tstamp 5a0c791a-4597-4f0f-be3a-9bb8556b0e86))
+  (pad "1" smd custom (at 0 -5.9 180) (size 1 3) (drill (offset 2.1 0)) (layers "B.Cu" "B.Mask")
     (options (clearance outline) (anchor rect))
     (primitives
       (gr_poly
@@ -105,6 +86,25 @@
         )
         (width 0) (fill yes))
     ) (tstamp d64efe50-b3c0-42c2-ad8c-1072352534a5))
+  (pad "2" smd custom (at 0 -5.9 180) (size 1 3) (drill (offset -2.1 0)) (layers "F.Cu" "F.Mask")
+    (options (clearance outline) (anchor rect))
+    (primitives
+      (gr_poly
+        (pts
+          (xy 1.29 1.5)
+          (xy 0.49 0.7)
+          (xy 0.49 1.5)
+        )
+        (width 0) (fill yes))
+      (gr_poly
+        (pts
+          (xy 1.29 -1.5)
+          (xy 0.49 -0.7)
+          (xy 0.49 -1.5)
+        )
+        (width 0) (fill yes))
+    ) (tstamp 282f55cf-f61b-4e62-b6cc-ae7dc96f1479))
+  (pad "2" thru_hole circle (at 5 -3.7) (size 3 3) (drill 1.55) (layers "*.Cu" "B.Paste" "B.Mask") (tstamp 9b2273c8-01a6-43d3-b651-3cf218960cf2))
   (group "" (id 928aa241-38bf-4d18-a8e2-08a596f74413)
     (members
       06e74a17-68dd-45a3-b3b3-8349f5e91757

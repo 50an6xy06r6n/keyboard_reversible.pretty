@@ -3,11 +3,11 @@
   (descr "Reversible diode footprint")
   (tags "reversible diode")
   (attr through_hole)
-  (fp_text reference "D**" (at 0 0 180) (layer "F.SilkS") hide
+  (fp_text reference "D**" (at 0 0 180) (layer "F.Fab") hide
       (effects (font (size 1.27 1.27) (thickness 0.15)))
     (tstamp 058f1e3a-593e-4d3b-ba55-07760c646a03)
   )
-  (fp_text value "Val**" (at 0.254 0 -180) (layer "F.SilkS") hide
+  (fp_text value "Val**" (at 0.254 0 180) (layer "F.Fab") hide
       (effects (font (size 1.27 1.27) (thickness 0.15)))
     (tstamp 30dda750-2c3a-4acc-84c0-bc848aa1b342)
   )
