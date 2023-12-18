@@ -9,12 +9,8 @@
       (effects (font (size 1.27 1.27) (thickness 0.15)))
     (tstamp d8603f9d-b4df-463e-a27a-119716b9a451)
   )
-  (fp_line (start 2.75 -1.45) (end 2.75 5)
-    (stroke (width 0.254) (type default)) (layer "F.Cu") (tstamp 15aeff80-1d92-4fb7-80f3-94b40deb4297))
   (fp_line (start 5 -4.527) (end 2 -4.527)
     (stroke (width 0.254) (type default)) (layer "F.Cu") (tstamp 88ff2ac9-5836-4c77-971c-ddee8f807c9f))
-  (fp_line (start 5 -3.7) (end 2.75 -1.45)
-    (stroke (width 0.254) (type default)) (layer "F.Cu") (tstamp b3509b1c-29fd-402f-8ecc-e9c73f924e54))
   (fp_line (start -5 -3.7) (end -2.75 -1.45)
     (stroke (width 0.254) (type default)) (layer "B.Cu") (tstamp 9ca9386a-3b0c-4cdf-928d-8164f3dec525))
   (fp_line (start -2.75 -1.45) (end -2.75 5)
@@ -76,6 +72,9 @@
   (fp_circle (center 0 0) (end 1 0)
     (stroke (width 0.1) (type default)) (fill none) (layer "Dwgs.User") (tstamp 7ccb82c2-65b5-4113-be6f-17518b474bd6))
   (pad "" np_thru_hole circle (at -5.5 0 270) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask") (tstamp 1ff088d1-a429-4191-a2ec-806ddf6dd293))
+  (pad "" thru_hole circle (at -5 -3.7) (size 3 3) (drill 1.55) (layers "*.Cu" "F.Paste" "F.Mask") (tstamp 5a0c791a-4597-4f0f-be3a-9bb8556b0e86))
+  (pad "" thru_hole roundrect (at -2.109 4.7) (size 2.286 1.778) (drill 0.9906 (offset 0.254 0)) (layers "*.Cu" "*.Paste" "*.Mask") (roundrect_rratio 0)
+    (chamfer_ratio 0.2) (chamfer top_right bottom_right) (tstamp d6730a74-3caf-4a9d-b995-d41307d6fc2f))
   (pad "" smd custom (at 0 -5.9 180) (size 0.7 3) (drill (offset -0.35 0)) (layers "F.Cu" "F.Paste" "F.Mask")
     (options (clearance outline) (anchor rect))
     (primitives
@@ -100,13 +99,7 @@
         )
         (width 0) (fill yes))
     ) (tstamp 019ea452-508f-41bf-81aa-455b9b5a8223))
-  (pad "" thru_hole circle (at 0 -5.9) (size 3 3) (drill 1.55) (layers "*.Cu" "*.Paste" "*.Mask") (tstamp 717473d4-37bd-469d-80be-f69e1a09f5a5))
-  (pad "" np_thru_hole circle (at 0 0 270) (size 4 4) (drill 4) (layers "*.Cu" "*.Mask") (tstamp 01479582-538d-45c8-afb8-ab288f7f528d))
-  (pad "" np_thru_hole circle (at 5.5 0 270) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask") (tstamp 0168c5f0-0416-489b-a7af-9105bfd5d56f))
-  (pad "1" thru_hole circle (at -5 -3.7) (size 3 3) (drill 1.55) (layers "*.Cu" "F.Paste" "F.Mask") (tstamp 5a0c791a-4597-4f0f-be3a-9bb8556b0e86))
-  (pad "1" thru_hole roundrect (at -2.109 4.7) (size 2.286 1.778) (drill 0.9906 (offset 0.254 0)) (layers "*.Cu" "*.Paste" "*.Mask") (roundrect_rratio 0)
-    (chamfer_ratio 0.2) (chamfer top_right bottom_right) (tstamp d6730a74-3caf-4a9d-b995-d41307d6fc2f))
-  (pad "1" smd custom (at 0 -5.9 180) (size 1 3) (drill (offset 2.1 0)) (layers "B.Cu" "B.Mask")
+  (pad "" smd custom (at 0 -5.9 180) (size 1 3) (drill (offset 2.1 0)) (layers "B.Cu" "B.Mask")
     (options (clearance outline) (anchor rect))
     (primitives
       (gr_poly
@@ -124,6 +117,24 @@
         )
         (width 0) (fill yes))
     ) (tstamp d64efe50-b3c0-42c2-ad8c-1072352534a5))
+  (pad "" thru_hole circle (at 0 -5.9) (size 3 3) (drill 1.55) (layers "*.Cu" "*.Paste" "*.Mask") (tstamp 717473d4-37bd-469d-80be-f69e1a09f5a5))
+  (pad "" np_thru_hole circle (at 0 0 270) (size 4 4) (drill 4) (layers "*.Cu" "*.Mask") (tstamp 01479582-538d-45c8-afb8-ab288f7f528d))
+  (pad "" np_thru_hole circle (at 5.5 0 270) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask") (tstamp 0168c5f0-0416-489b-a7af-9105bfd5d56f))
+  (pad "1" thru_hole custom (at 2.209 4.7) (size 1.905 1.905) (drill 0.9906) (layers "*.Cu" "*.Paste" "*.Mask")
+    (thermal_bridge_angle 90)
+    (options (clearance outline) (anchor circle))
+    (primitives
+      (gr_poly
+        (pts
+          (xy 0 0.9525)
+          (xy 0 -0.9525)
+          (xy -1.0414 -0.9525)
+          (xy -1.397 -0.5969)
+          (xy -1.397 0.5969)
+          (xy -1.0414 0.9525)
+        )
+        (width 0) (fill yes))
+    ) (tstamp da68ad17-09c2-4548-8bae-cb30a2fc0918))
   (pad "2" smd custom (at 0 -5.9 180) (size 1 3) (drill (offset -2.1 0)) (layers "F.Cu" "F.Mask")
     (options (clearance outline) (anchor rect))
     (primitives
@@ -142,28 +153,7 @@
         )
         (width 0) (fill yes))
     ) (tstamp 282f55cf-f61b-4e62-b6cc-ae7dc96f1479))
-  (pad "2" thru_hole custom (at 2.209 4.7) (size 1.905 1.905) (drill 0.9906) (layers "*.Cu" "*.Paste" "*.Mask")
-    (thermal_bridge_angle 90)
-    (options (clearance outline) (anchor circle))
-    (primitives
-      (gr_poly
-        (pts
-          (xy 0 0.9525)
-          (xy 0 -0.9525)
-          (xy -1.0414 -0.9525)
-          (xy -1.397 -0.5969)
-          (xy -1.397 0.5969)
-          (xy -1.0414 0.9525)
-        )
-        (width 0) (fill yes))
-    ) (tstamp da68ad17-09c2-4548-8bae-cb30a2fc0918))
   (pad "2" thru_hole circle (at 5 -3.7) (size 3 3) (drill 1.55) (layers "*.Cu" "B.Paste" "B.Mask") (tstamp 9b2273c8-01a6-43d3-b651-3cf218960cf2))
-  (group "" (id 425a4ce8-5255-4d73-b17c-b108ef43d70d)
-    (members
-      15aeff80-1d92-4fb7-80f3-94b40deb4297
-      b3509b1c-29fd-402f-8ecc-e9c73f924e54
-    )
-  )
   (group "" (id e558cbb9-4e3b-40d4-a16b-c78d3b9940db)
     (members
       02f6d490-c573-4691-b83a-1485dc866b0c
